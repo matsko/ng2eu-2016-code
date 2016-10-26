@@ -1,0 +1,117 @@
+:host, select, option, input, textarea {
+    font-family:Verdana;
+    font-size:1rem;
+}
+
+:host {
+    font-size:18px;
+    position:relative;
+    padding:40px;
+    background:#eee;
+    display:block;
+}
+
+.actions {
+    box-shadow:0 0 5px #aaa;
+    margin-bottom:1em;
+    padding:1em;
+    background:white;
+}
+
+.button {
+    color:maroon;
+    padding:8px 15px;
+    background:white;
+    border:5px solid #ccc;
+    font-size:1.1em;
+    cursor:pointer;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    outline:0;
+    border-color:black;
+}
+
+.record {
+    position:relative;
+    padding:1em;
+    margin-bottom:5px;
+    background:white;
+    box-shadow:0 0 5px #aaa;
+}
+
+.definitions {
+    padding:20px;
+    background:white;
+    box-shadow:0 0 5px #aaa;
+}
+
+.definitions dt {
+    background:#eee;
+    padding:5px;
+    margin:0;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.definitions dd {
+    padding:5px;
+    margin:0;
+}
+
+.actions {
+    margin-bottom:20px;
+}
+
+.cell {
+    width:20%;
+    border:10px solid black;
+    box-shadow:0 0 5px #aaa;
+    text-align:center;
+    margin:1% 2%;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+}
+.cell h1 {
+    font-size:4rem;
+    margin:10px 0 0;
+    padding:0;
+    font-weight:bold;
+}
+.cell p {
+    font-size:1.5rem;
+    margin:0 0 1em;
+}
+.cell sup {
+    position:absolute;
+    box-shadow:0 0 5px #aaa;
+    top:-30px;
+    right:-30px;
+    background:#A8C545;
+    color:white;
+    padding:10px;
+    font-size:1.15rem;
+    border:6px solid #6a7f25;
+}
+.cell sup:before {
+    content:"";
+    position:absolute;
+    left:18px;
+    bottom:-30px;
+    border:12px solid transparent;
+    border-top-color:#6a7f25;
+}
+.cell sup:after {
+    content:"";
+    position:absolute;
+    left:20px;
+    bottom:-20px;
+    border:10px solid transparent;
+    border-top-color:#A8C545;
+}
+.first-record, .last-record { background: #0092B2; color: white; }
+.even-record { background: white; color: black; }
+.odd-record { background: #DFD3B6; color: black; }

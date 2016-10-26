@@ -1,0 +1,13 @@
+<nav class="controls">
+    <button (click)="play()">Play/Reset</button>
+    <input type="range" #inputElm (input)="setPosition(inputElm.value)" value="0" />
+</nav>
+
+<div class="start">0%</div>
+<div class="loading-stage">
+    <div class="loading-symbol"
+         (@loading.start)="registerPlayer($event.player)"
+         (@loading.done)="deregisterPlayer()"
+         [@loading]="playValue"></div>
+</div>
+<div class="end">100%</div>

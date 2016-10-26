@@ -1,0 +1,26 @@
+<nav class="actions">
+    <button class="button" (click)="showAll()">Show All Items</button>
+    <button class="button" (click)="hideAll()">Hide All Items</button>
+    <button class="button" (click)="evenMonths()">Even Months</button>
+    <button class="button" (click)="oddMonths()">Odd Months</button>
+</nav>
+<div *ngFor="let item of items;
+             let index=index;
+             let first=first;
+             let last=last;
+             let even=even;
+             let odd=odd;"
+     [attr.class]="resolveClassName(first, last, even, odd)"
+     @monthAnimation>
+
+    <h1>{{ item.count }}</h1>
+    <p>{{ item.name }}</p>
+
+    <sup *ngIf="item.count == 1">
+        New Years Resolutions...
+    </sup>
+
+    <sup *ngIf="item.count == 12">
+        Yaaaay holidays!
+    </sup>
+</div>

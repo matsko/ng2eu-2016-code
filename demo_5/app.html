@@ -1,0 +1,13 @@
+<div [attr.class]="className">
+  <div *ngFor="let item of items; let i = index" class="col" [@flex]="(evenOdd && i % 2 == 0) ? 'even' : col">
+    {{ item }}
+  </div>
+</div>
+
+<aside class="actions">
+  <button (click)="setCol(1)">1 Col</button>
+  <button (click)="setCol(2)">2 Col</button>
+  <button (click)="setCol(3)">3 Col</button>
+  <button (click)="setCol(4)">4 Col</button>
+  <button (click)="evenOdd=!evenOdd">Even Odd</button>
+</aside>

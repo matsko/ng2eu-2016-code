@@ -1,0 +1,81 @@
+:host {
+    display:block;
+    height:500px;
+    background:rgba(100,100,100,0.3);
+    margin:0 auto;
+    position: relative;
+}
+
+.start, .end {
+    position:absolute;
+    width:200px;
+    line-height:200px;
+    text-align:center;
+    display:inline-block;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.loading-stage {
+    position:absolute;
+    top:calc(60% - 50px);
+    left:calc(15% + 100px);
+    right:calc(15% + 100px);
+}
+
+.loading-stage:after {
+    position:absolute;
+    top:50px;
+    left:0;
+    right:0;
+    content:"";
+    border-top: 2px dashed black;
+}
+
+.controls {
+    background:rgba(0,0,0,0.2);
+    position:absolute;
+    top:15%;
+    left:10%;
+    right:10%;
+    padding:20px;
+}
+
+.controls button {
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    font-size:2rem;
+    border:0;
+    cursor:pointer;
+    color:white;
+    width:20%;
+}
+
+.controls input {
+    cursor: pointer;
+    width:78%;
+    margin-left:1%;
+}
+
+.loading-symbol {
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:url(./demo_7/logo.svg) no-repeat 0 0 / cover;
+    z-index:1000;
+}
+
+.start {
+    top:60%;
+    left:10%;
+    transform: translateY(-50%);
+}
+
+.end {
+    top:60%;
+    right:10%;
+    transform: translateY(-50%);
+}
+

@@ -1,0 +1,73 @@
+:host {
+  background:url(./demo_5/grid.jpg);
+  margin:0;
+  padding:0;
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+* { box-sizing: border-box; }
+
+aside {
+  width:25%;
+  position:fixed;
+  top:5%;
+  right:5%;
+  background:white;
+  border:10px solid #205C9B;
+}
+
+.content {
+  width:60%;
+  position:fixed;
+  top:5%;
+  left:5%;
+}
+
+.actions {
+  padding:5px;
+}
+
+.actions button {
+  text-align:center;
+  display:block;
+  padding:10px;
+  width:calc(100% - 10px);
+  border:2px solid #aaa;
+  background:white;
+  margin:5px;
+  cursor:pointer;
+  font-size:20px;
+}
+
+.actions button:active {
+  background:#eee;
+  color:#fc0;
+}
+
+.actions button:active,
+.actions button:focus {
+  outline:0;
+}
+
+.cols {
+  border:5px solid #205C9B;
+}
+
+.cols > .col {
+  display:inline-block;
+  border:5px solid #205C9B;
+  line-height:200px;
+  color:#205C9B;
+  font-size:150px;
+  text-align:center;
+  background:white;
+}
+
+.cols.even > .col:nth-child(even) {
+  background:red;
+}

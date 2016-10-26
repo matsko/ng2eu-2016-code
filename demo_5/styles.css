@@ -1,0 +1,7 @@
+body, html {
+    background:url(./demo_5/grid.jpg);
+    margin:0;
+    padding:0;
+}
+
+* { box-sizing: border-box; }
